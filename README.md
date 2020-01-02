@@ -1,34 +1,25 @@
-# json-view
+# Object-View-TS
 
-## Project setup
-```
-yarn install
-```
+## 基于TypeScript开发的Object展示组件，借鉴于Vue-Json-Pretty组件，当然它也是一个Vue组件
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+### 属性
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+  * data 需要展示的数据
+  * deep 默认展开数据的深度
+  * show-line 数据展开的样式
+  * show-length 数据的数量
+  * show-double-quotes 属性名称是否有双括号
 
-### Run your tests
-```
-yarn run test
-```
 
-### Lints and fixes files
-```
-yarn run lint
-```
+### 示例
 
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+   ``` javascript
+   <object-view 
+     :data="data" 
+     :deep="2" 
+     :show-line="true"
+     :show-length="true"
+     :show-double-quotes="true"
+   >
+   </object-view>
+   ```
