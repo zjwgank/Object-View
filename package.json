@@ -1,6 +1,6 @@
 {
   "name": "object-view-ts",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "./src/index.js",
   "author": "zjwgank",
   "repository": {
