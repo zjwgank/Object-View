@@ -1,7 +1,12 @@
 {
-  "name": "json-view",
+  "name": "object-view-ts",
   "version": "0.1.1",
   "main": "./src/index.js",
+  "author": "zjwgank",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zjwgank/Object-View.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
