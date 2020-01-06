@@ -93,17 +93,18 @@ export default class ObjectView extends Mixins(MixUtil) {
   isMouseOver: boolean = false;
 
   get lastKey() {
-    const { data, IsObject } = this;
-    if (Array.isArray(data)) {
-      return data[data.length - 1];
-    } else if (IsObject(data)) {
-      const keys: Array<string> = Object.keys(data);
+    const { parentData, IsObject } = this;
+    if (Array.isArray(parentData)) {
+      return parentData.length - 1;
+    } else if (IsObject(parentData)) {
+      const keys: Array<string> = Object.keys(parentData);
       return keys[keys.length - 1];
     }
   }
 
   get notLastKey() {
-    return this.currentKey !== this.lastKey;
+    const { currentKey, lastKey } = this;
+    return currentKey !== lastKey;
   }
 
   handleToggleMouse() {
