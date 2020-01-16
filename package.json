@@ -2,7 +2,7 @@
   "name": "object-view-ts",
   "version": "0.1.5",
   "main": "./src/index.js",
-  "typings": "types/index.d.ts",
+  "types": "./types/index.d.ts",
   "author": "zjwgank",
   "repository": {
     "type": "git",
